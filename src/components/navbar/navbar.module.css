@@ -16,6 +16,16 @@
   gap: 20px;
 }
 
+.login {
+  font-size: 12px;
+  padding: 5px;
+  border: none;
+  background-color: #53c28b;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 .logout {
   padding: 5px;
   border: none;

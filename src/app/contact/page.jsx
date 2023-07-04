@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Button from '@/components/button/button';
 
 export const metadata = {
-  title: 'Lama Dev Contact Information',
+  title: 'NanoInnovate Contact Information',
   description: 'This is Contact Page',
 };
 
