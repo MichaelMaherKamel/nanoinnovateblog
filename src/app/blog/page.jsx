@@ -2,8 +2,11 @@ import styles from './page.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
+// For local testing change URLs to http://localhost:3000
+// For live testing and deployment change URLs to your domain
+
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/posts', {
+  const res = await fetch('https://nanoinnovateblog.vercel.app//api/posts', {
     cache: 'no-store',
   });
 
@@ -19,7 +22,7 @@ const Blog = async () => {
   return (
     <div className={styles.mainContainer}>
       {data.map((item) => (
-        <Link href={`http://localhost:3000/blog/${item._id}`} className={styles.container} key={item.id}>
+        <Link href={`https://nanoinnovateblog.vercel.app//blog/${item._id}`} className={styles.container} key={item.id}>
           <div className={styles.imageContainer}>
             <Image src={item.img} alt='' width={400} height={250} className={styles.image} />
           </div>
