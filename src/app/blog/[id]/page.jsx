@@ -2,8 +2,11 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
+// For local testing change URLs to http://localhost:3000
+// For live testing and deployment change URLs to your domain
+
 async function getData(id) {
-  const res = await fetch(`https://nanoinnovateblog.vercel.app//api/posts/${id}`, {
+  const res = await fetch(`https://nanoinnovateblog.vercel.app/api/posts/${id}`, {
     cache: 'no-store',
   });
 
